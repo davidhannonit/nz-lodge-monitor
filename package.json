@@ -1,0 +1,25 @@
+json{
+  "name": "nz-lodge-monitor",
+  "version": "1.0.0",
+  "description": "Automated occupancy and rate monitoring for NZ luxury lodges",
+  "main": "dashboard/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node dashboard/server.js",
+    "scrape": "node src/orchestrator.js --run-now"
+  },
+  "dependencies": {
+    "playwright-chromium": "^1.44.0",
+    "node-cron": "^3.0.3",
+    "sql.js": "^1.10.3",
+    "nodemailer": "^6.9.13",
+    "express": "^4.19.2",
+    "date-fns": "^3.6.0",
+    "winston": "^3.13.0",
+    "p-limit": "^5.0.0",
+    "dotenv": "^16.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
